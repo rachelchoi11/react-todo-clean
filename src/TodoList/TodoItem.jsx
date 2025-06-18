@@ -1,9 +1,8 @@
-export default function TodoItem() {
+export default function TodoItem({ text, onDelete }) {
   return (
     <li>
-      예시
-      <button type="button">삭제</button>
-      <button type="button">수정</button>
+      {text}
+      <button onClick={onDelete}>삭제</button>
     </li>
   );
 }
